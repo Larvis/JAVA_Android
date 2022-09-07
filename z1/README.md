@@ -1,6 +1,6 @@
-# TSN_ANDROID_DEMO_HELLO
-Простейшая программа суммы двух цифр на Android
+# ERM_ANDROID_Z1
+Простейшая программа суммы трёх цифр на Android с тостером
 
-![Screenshot](screenshot.png)
+![Screenshot](src.jpeg)
 
-https://www.youtube.com/watch?v=PMYmKEhbh0s
+
