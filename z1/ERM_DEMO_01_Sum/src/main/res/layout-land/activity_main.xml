@@ -18,7 +18,7 @@
         android:layout_height="50dp"
         android:contentDescription="@string/logo"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/androidify" />
+        app:srcCompat="@drawable/erm_logo" />
 
     <!-- Поле ввотда текста c шириной в 10 букв "М",
          с авторазмером по высоте, любые символы
@@ -37,23 +37,38 @@
             android:id="@+id/editText_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autofillHints=""
+            android:layout_marginTop="5dp"
             android:ems="10"
             android:hint="@string/a"
-            android:inputType="textPersonName"
-            tools:targetApi="o" />
+            android:inputType="number"
+            android:autofillHints="no" />
 
         <!-- Поле ввотда текста на всю ширину экрана,
              с авторазмером по высоте, любые символы
              и снизу отступ в 5 dp -->
+
+        <!-- Кнопка на всю ширину экрана и с авторазмером по высоте,
+             при нажатии будет искать и вызывать метод "onClick",
+             отступ по-краям в 5 dp-->
         <EditText
             android:id="@+id/editText_b"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
             android:ems="10"
             android:hint="@string/b"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/x"
+            android:inputType="number" />1
 
         <!-- Кнопка на всю ширину экрана и с авторазмером по высоте,
              при нажатии будет искать и вызывать метод "onClick",
