@@ -8,10 +8,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background2">
+    android:background="@drawable/bg2">
 
     <TextView
         android:id="@+id/textView"
+        android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -22,7 +23,7 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#F2E70E"
+        android:textColor="#FFF"
         android:ems="10"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:inputType="none"

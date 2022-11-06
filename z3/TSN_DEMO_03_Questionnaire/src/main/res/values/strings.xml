@@ -1,11 +1,13 @@
 <resources>
     <!-- Название программы -->
-    <string name="app_name">TSN_DEMO_03_Questionnaire</string>
+    <string name="app_name">ERM_Z3_Questionnaire</string>
 
     <!-- Текстовые константы -->
     <string name="Мужчина">Мужчина</string>
     <string name="Женщина">Женщина</string>
     <string name="Кто_Вы">Кто Вы?</string>
+    <string name="Образование">Образование</string>
+
     <string name="Введите_ФИО">введите сюда свое ФИО</string>
     <string name="Укажите_пол">Укажите пол:</string>
     <string name="мужчина">мужчина</string>
@@ -17,6 +19,8 @@
     <string name="начальное">начальное</string>
     <string name="Сводные_данные">Сводные данные:</string>
     <string name="Назад">Назад</string>
+    <string name="ДАЛЕЕ">ДАЛЕЕ</string>
+
     <string name="Выход">Выход</string>
     <string name="Вы">Вы:</string>
     <string name="Ваш_пол">Ваш пол:</string>

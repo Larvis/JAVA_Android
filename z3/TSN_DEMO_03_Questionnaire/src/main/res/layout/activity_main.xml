@@ -4,7 +4,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/background1">
+                android:background="@drawable/bg3">
 
     <!-- Выравнивание от верхнего края экрана (android:layout_alignParentTop="true")
          по-центру по-горизонтали (android:gravity="center")
@@ -18,9 +18,9 @@
         android:layout_alignParentTop="true"
         android:gravity="center"
         android:rotation="4"
-        android:textColor="#F2E70E"
-        android:textSize="36sp"
-        android:text="@string/Кто_Вы"/>
+        android:text="@string/Кто_Вы"
+        android:textColor="#9E0000"
+        android:textSize="36sp" />
 
     <!-- Выравнивание ниже компонента "textView" (android:layout_below="@+id/textView")
          по-центру по-горизонтали (android:gravity="center"), размер 20 букв "M" -->
@@ -29,75 +29,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:gravity="center"
         android:ems="20"
+        android:gravity="center"
         android:hint="@string/Введите_ФИО"
-        android:inputType="textPersonName"
-        android:importantForAutofill="no" />
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
 
     <!-- Выравнивание ниже компонента "editText" (android:layout_below="@+id/editText")
          по-центру по-горизонтали (android:gravity="center")
          большим шрифтом (android:textAppearance="?android:attr/textAppearanceLarge")
          c жирностью и наклоном (android:textStyle="bold|italic") -->
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold|italic"
-        android:text="@string/Укажите_пол"
 
-        />
 
-    <!-- Выравнивание ниже компонента "textView2" (android:layout_below="@+id/textView2") -->
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:text="@string/мужчина"/>
 
     <!-- Выравнивание ниже компонента "checkBox" (android:layout_below="@+id/checkBox")
          по-центру по-горизонтали (android:gravity="center")
          средним размером (android:textAppearance="?android:attr/textAppearanceMedium") -->
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Выберите_образование"/>
 
-    <!-- Выравнивание ниже компонента "textView3" (android:layout_below="@+id/textView3") -->
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3">
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/начальное"/>
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/среднее"/>
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/высшее"/>
-
-    </RadioGroup>
 
     <!-- Выравнивание ниже компонента "radioGroup" (android:layout_below="@+id/radioGroup")
          по-центру по-горизонтали (android:gravity="center")
@@ -106,7 +54,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radioGroup"
+        android:layout_below="@+id/editText"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/Ваша_стана"/>
@@ -126,6 +74,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:onClick="onInfo"
-        android:text="@string/ИТОГО"/>
+        android:text="@string/ДАЛЕЕ" />
 
 </RelativeLayout>

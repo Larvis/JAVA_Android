@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     // Локальные переменные для доступа к компонентам окна
     private EditText editText;
     private CheckBox checkBox;
-    private RadioGroup radioGroup;
-    private RadioButton selectRadioButton;
+//    private RadioGroup radioGroup;
+//    private RadioButton selectRadioButton;
     private Spinner spinner;
 
     @Override
@@ -26,23 +26,21 @@ public class MainActivity extends AppCompatActivity {
 
         // Инициализация переменных доступа к компонентам окна
         editText =   findViewById(R.id.editText);
-        checkBox =   findViewById(R.id.checkBox);
-        radioGroup = findViewById(R.id.radioGroup);
+//        checkBox =   findViewById(R.id.checkBox);
+//        radioGroup = findViewById(R.id.radioGroup);
         spinner =    findViewById(R.id.spinner);
     }
 
     // МЕТОД ДЛЯ КНОПКИ "ИТОГО"
     public void onInfo(View v) {
         // Создание второго окна
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        //Intent intent = new Intent("kz.talipovsn.questionnaire.ResultActivity");
+        Intent intent = new Intent(this, SecondActivity.class);
+//        Intent intent = new Intent("kz.talipovsn.questionnaire.SecondActivity");
 
-        selectRadioButton = findViewById(radioGroup.getCheckedRadioButtonId());
+//        selectRadioButton = findViewById(radioGroup.getCheckedRadioButtonId());
 
         // Подготовка параметров для второго окна
         intent.putExtra("fio", editText.getText().toString());
-        intent.putExtra("gender", checkBox.isChecked() ? getString(R.string.Мужчина) : getString(R.string.Женщина));
-        intent.putExtra("edu", selectRadioButton.getText());
         intent.putExtra("country", spinner.getSelectedItem().toString());
 
         // Запуск второго окна
