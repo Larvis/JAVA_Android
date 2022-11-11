@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/talip/Development/Projects/AndroidStudioProjects/TSN_ANDROID_DEMO_MICRO/TSN_DEMO_02_Quadratic/src/main/res/layout-land/activity_main.xml" value="0.2788966725043783" />
         <entry key="..\:/talip/Development/Projects/AndroidStudioProjects/TSN_ANDROID_DEMO_MICRO/TSN_DEMO_02_Quadratic/src/main/res/layout/activity_main.xml" value="0.296195652173913" />
-        <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout-land/activity_main.xml" value="0.19947916666666668" />
+        <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout-land/activity_main.xml" value="0.24793650309244786" />
+        <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout-land/activity_second.xml" value="0.32799936930338547" />
         <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout/activity_main.xml" value="0.375" />
         <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout/activity_result.xml" value="0.5" />
-        <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout/activity_second.xml" value="0.5" />
+        <entry key="TSN_DEMO_03_Questionnaire/src/main/res/layout/activity_second.xml" value="0.1" />
       </map>
     </option>
   </component>

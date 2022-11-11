@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- Относительное выравнивание, используется весь экран
      и фоновая картинка "background1" -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -69,12 +68,12 @@
         android:layout_below="@+id/textView3">
 
         <RadioButton
+            android:textColor="#FFF"
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="@string/начальное"
-            android:textColor="#FFF" />
+            android:text="@string/начальное"/>
 
         <RadioButton
             android:textColor="#FFF"
@@ -91,6 +90,8 @@
             android:layout_height="wrap_content"
             android:text="@string/высшее"/>
 
+
+
     </RadioGroup>
     <!-- Выравнивание ниже компонента "checkBox" (android:layout_below="@+id/checkBox")
          по-центру по-горизонтали (android:gravity="center")
@@ -103,6 +104,15 @@
 
 
     <!-- Выравнивание по нижней границы окна (android:layout_alignParentBottom="true") -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="550px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="300dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/edu" />
 
     <Button
         android:id="@+id/buttonBack"
@@ -121,13 +131,6 @@
         android:onClick="onResult"
         android:text="@string/ИТОГО" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="550px"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:scaleType="centerInside"
-        android:layout_centerInParent="true"
-        app:srcCompat="@drawable/edu" />
+
 
 </RelativeLayout>
