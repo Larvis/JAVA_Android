@@ -10,7 +10,6 @@ Cделать многооконную программу из 3-х окон с:
 **Многооконная программа (ERM_Android_Z3):**
 
 ![Screenshot](s11.jpg)
-
 ![Screenshot](s22.jpg)
 
 ![Screenshot](s33.jpg)
