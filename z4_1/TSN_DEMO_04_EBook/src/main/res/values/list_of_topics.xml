@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lec1">    Содержание</string>
+    <string name="lec2">    Кузов</string>
+    <string name="lec3">    Двигатель</string>
+    <string name="lec4">    Сцепление</string>
+    <string name="lec5">    Электрика</string>
+    <string name="lec6">    Неисправности</string>
+    <string name="lec7">    Советы</string>
+
+    <string name="prog">     Программы</string>
+</resources>

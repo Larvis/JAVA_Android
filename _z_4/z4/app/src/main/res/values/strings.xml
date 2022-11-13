@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">z4</string>
+    <string name="title_cat">Разделы</string>
+    <string name="title_ext">Ссылки</string>
+    <string name="title_mail">Отправить отзыв</string>
+    <string name="title_search">Поиск</string>
+
+    <string name="category_1">Раздел 1</string>
+    <string name="category_2">Раздел 2</string>
+    <string name="category_3">Раздел 3</string>
+    <string name="category_4">Раздел 4</string>
+
+    <string name="email">proffix4@gmail.com</string>
+    <string name="subject">Предложения по программе</string>
+    <string name="textmail">Здравствуйте !</string>
+    <string name="sending_letter">Посылка письма автору</string>
+    <string name="no_installed_email_client">Нет установленного почтового клиента</string>
+
+</resources>

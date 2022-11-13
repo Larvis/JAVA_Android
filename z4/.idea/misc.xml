@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17346014492753623" />
+        <entry key="app/src/main/res/drawable-v24/ic_action_close.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable-v24/ic_open_in_new.xml" value="0.197" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3446557971014493" />
+        <entry key="app/src/main/res/layout/fragment_ext.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33602150537634407" />
+        <entry key="app/src/main/res/layout/fragment_webview.xml" value="0.3351206434316354" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3885416666666667" />
+        <entry key="app/src/main/res/menu/searchview_in_menu.xml" value="0.3885416666666667" />
       </map>
     </option>
   </component>
@@ -12,8 +20,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="SuppressKotlinCodeStyleNotification">
-    <option name="disableForAll" value="true" />
   </component>
 </project>

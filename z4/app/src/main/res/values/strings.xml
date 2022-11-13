@@ -1,6 +1,33 @@
 <resources>
     <string name="app_name">z4</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_cat">Разделы</string>
+    <string name="title_ext">Ссылки</string>
+    <string name="title_mail">Отправить отзыв</string>
+    <string name="title_search">Поиск</string>
+
+    <string name="category_1">Раздел 1</string>
+    <string name="category_2">Раздел 2</string>
+    <string name="category_3">Раздел 3</string>
+    <string name="category_4">Раздел 4</string>
+
+    <string name="link_1">Ссылка 1</string>
+    <string name="link_2">Ссылка 2</string>
+    <string name="link_3">Ссылка 3</string>
+    <string name="link_4">Ссылка 4</string>
+
+    <string name="email">dev@gmail.com</string>
+    <string name="subject">Предложения по программе</string>
+    <string name="textmail">Здравствуйте !</string>
+    <string name="sending_letter">Посылка письма автору</string>
+    <string name="no_installed_email_client">Нет установленного почтового клиента</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="search_hint">Поиск</string>
+    <string name="of">из</string>
+    <string name="not_found">увы…</string>
+
+    <string name="resource_directory">file:///android_asset/HTML/</string>
+
 </resources>

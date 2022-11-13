@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/z4_1.iml" filepath="$PROJECT_DIR$/.idea/modules/z4_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_04_EBook/z4_1.TSN_DEMO_04_EBook.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,714 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  color: #3b3734;
+  max-width: 1366px;
+  margin: auto;
+  font-size: 100%;
+  line-height: 1.9;
+  box-shadow: 0px 0px 13px -10px #111;
+}
+
+a, a:visited {
+  color: #1A73E7;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #CD0000;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 5px;
+  color: #666666;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 140%;
+  color: #666666;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 130%;
+  color: #666666;
+}
+
+.dom {
+  position: absolute;
+  border: none;
+  height: 13px;
+  margin: 5px;
+}
+
+.shapka {
+  background: #fff;
+  max-width: 100%;
+  background: #FFFFFF url(jpg-oform/levo-fon.png) repeat-x;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.icon, .icon2 {
+  display: none;
+  margin: auto;
+  margin-right: 0;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.logo {
+  margin-left: 55px;
+  margin-top: -17px;
+  min-width: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666 !important;
+  ;
+}
+
+.logo_line1 {
+  font-size: 34px;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-style: italic;
+}
+
+.logo_line2 {
+  font-size: 72%;
+  letter-spacing: 1px;
+  font-family: Tahoma, Times New Roman, Arial;
+  font-variant: small-caps;
+}
+
+.logo_line2 img {
+  height: 20px;
+  border: none;
+  vertical-align: middle;
+}
+
+.center {
+  margin-right: -110px;
+}
+
+.lupa {
+  display: none;
+}
+
+.poisk {
+  margin-top: 35px;
+  width: 300px;
+}
+
+.avto {
+  display: flex;
+}
+
+.avto_line1 {
+  margin-right: 25px;
+  font-size: 90%;
+}
+
+.rub {
+  width: 40px;
+}
+
+nav {
+  display: flex;
+  margin-top: 5px;
+}
+
+.top_nav {
+  text-align: center;
+  height: auto;
+  margin: auto;
+  white-space: nowrap;
+}
+
+.top_nav a {
+  padding: 14px 14px;
+  font-size: 95%;
+}
+
+.i {
+  color: #ccc;
+  font-size: 95%;
+}
+
+.to_kat {
+  display: none;
+}
+
+.line {
+  max-width: 95%;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px dotted #abacab;
+  margin: auto;
+  margin-top: 0;
+}
+
+.rezina {
+  width: 310px;
+}
+
+/* ПРАВОЕ МЕНЮ */
+.pravoe_menu {
+  background-color: #fff;
+  flex: 0 0 310px;
+  min-width: 310px;
+  max-width: 310px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.pravoe_menu a {
+  display: inline-table;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 6px;
+  font-size: 95%;
+  margin-left: 5px;
+}
+
+.pravoe_menu li a {
+    margin-left:  0px;
+}
+
+.pd { color:#777; font-variant:small-caps; font-size:90%; margin-bottom: 10px; margin-top:-10px}
+
+ a.ob, .pdgrp { margin-left:20px}
+  a.pls { margin-left: auto}
+ .pdgrp { font-size:90%; color:#555; font-style:italic}
+
+ /* КОНТЕНТ */
+ 
+.content {
+  display: flex;
+}
+
+main {
+  flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+}
+
+.main table {
+  margin: auto;
+}
+
+.main img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* ОФОРМЛЕНИЕ */
+
+.tr1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tr1 td {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.td1 {
+  order: -3;
+}
+
+.td2 {
+  order: -1;
+}
+
+.td3 {
+  order: -2;
+}
+
+.tsentr {
+  text-align: center;
+  margin: auto;
+}
+
+.green {
+  color: #006602;
+}
+
+.red {
+  color: #cc0002;
+}
+
+.blue {
+  color: #3366FF;
+  font-style:italic
+}
+
+.green_border {
+  border: 1px dotted #66CC00;
+  padding: 6px;
+}
+
+.pod_img {
+  color: #666666;
+  font-style: italic;
+  text-align:justify
+}
+
+.atabl_adapt {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  margin:auto
+}
+
+a.fold {
+ font-size:100%;
+color:#000;
+text-decoration:none}
+
+th { background-color:#ffffcc; font-size:90%}
+.tk3 { min-width:100px}
+.tk2 { min-width:140px}
+.tk1, .tk2, .tk3, .tk5, .tk6 { text-align:center}
+.tk1 { text-align:center; font-weight:bold}
+.tble-kat tr:nth-child(2n){ background-color: #e8ecfd}
+.ogr { display:block; font-size:80%; color: #009900; line-height:1; }
+
+.video {
+  font-size: 22px;
+  color: #444444;
+}
+
+/* ПОДВАЛ  */
+footer {
+  display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+  background-image: url(jpg-oform/bottomolamus.png);
+  background-repeat: repeat-x;
+  margin-top: 40px;
+  height: 80px;
+ 
+}
+
+.metr { 
+font-size:75%; 
+color:#777;
+margin-left:10px}
+
+.podval {
+  display: flex;
+  margin-bottom: 10px;
+  margin-right:  px
+}
+ 
+.p2 { 
+font-size:80%; 
+line-height:normal; 
+min-width:390px;
+display:table; 
+margin-right:10px;
+margin-bottom:5px
+ }
+
+.p2 img { margin-right:5px; margin-top: 3px}
+
+.f1 {
+  height: 13px;
+}
+
+.f2 {
+  height: 11px;
+  margin-top: 1px;
+  margin-right:5px
+}
+
+@media screen and (max-width : 1020px) {
+  .dom {
+    display: none;
+    width: 0;
+  }
+
+  .icon {
+    margin-left: 15px;
+    display: inline;
+    color: #505050;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .logo {
+    margin-left: -40px;
+  }
+
+  .poisk {
+    margin-top: 32px;
+  }
+
+  .avto_line1 {
+    display: none;
+  }
+
+  .avto img {
+    margin-left: 50px;
+  }
+
+  .top_nav, .i {
+    display: none;
+  }
+
+  nav {
+    width: 300px;
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    margin-top: auto;
+  }
+
+  .top_nav {
+    padding-left: 0;
+    white-space: normal;
+  }
+
+  .top_nav.responsive {
+    background-image: none;
+    display: block;
+    left: 0;
+    top: 0;
+    line-height: 1.1;
+    position: absolute;
+    z-index: 9999;
+    width: 270px;
+    max-width: 270px;
+    background-color: #f1FcFc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: #DDD 1px solid;
+    border-left: 0;
+    box-shadow: 3px 3px 5px -4px #989;
+    box-sizing: border-box;
+  }
+
+  .top_nav.responsive a, .to_kat {
+    font-size: 100%;
+    float: none;
+    display: block;
+    text-align: left;
+    margin-left: 40px;
+	font-weight:bold
+
+  }
+
+  .line {
+    display: none;
+  }
+
+  .d.responsive, .main.responsive {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width : 925px) {
+  
+  .shapka {
+    box-shadow: 0 0 5px 0;
+  }
+
+  .logo {
+    display: flex;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .logo_line1 {
+    font-size: 30px;
+  }
+
+  .center {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+
+  .poisk {
+    width: 250px;
+  }
+
+  .avto {
+    min-width: 180px;
+  }
+
+  .avto_line1 {
+    display: none;
+  }
+
+  .avto img {
+    height: 85px;
+    margin: auto;
+  }
+
+  .rub {
+  }
+
+  .icon2 {
+    margin-right: 18px;
+    display: inline;
+    color: #505050;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .main a {
+    text-decoration: underline;
+  }
+ 
+ /* ПРАВОЕ МЕНЮ */
+  .pravoe_menu {
+    width: 0;
+    display: none;
+  }
+
+  .pravoe_menu.responsive {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 335px;
+    max-width: 99%;
+    right: 0;
+    top: -20px;
+    background-color: #f9FeFc;
+    padding-bottom: 25px;
+    padding-top: 26px;
+    border: #DDDDDD 1px solid;
+    border-right: none;
+    box-sizing: border-box;
+    box-shadow: -3px 3px 5px -4px #989;
+  }
+
+  .pravoe_menu.responsive a {
+    display: inline-table;
+    line-height: 1;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 17px;
+    font-size: 100%;
+  }
+  
+    .pravoe_menu.responsive li a {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+ 
+   .pravoe_menu.responsive a.pls { margin-left: auto}
+
+  
+ /* КОНТЕНТ */
+  .content {
+    display: block;
+	position: relative;
+
+  }
+
+  .main {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+
+  footer {
+  padding-right: 0;
+  flex-direction: column;
+ align-items: center;
+ border-top: 1px #eee solid;
+ height:auto
+}
+
+.metr { margin-left:0; margin-bottom:5px}
+.podval  { margin-right:0; margin-bottom: 5px; margin-top:5px; order:-1}
+.p2  img { display:none}
+.p2  { text-align:center; min-width:auto; margin-right:0;}
+
+}
+
+@media screen and (max-width : 800px) {
+
+  .shapka {
+    height: 70px;
+  }
+
+  .logo_line1 {
+    font-size: 28px;
+  }
+
+  .avto, .rub {
+    display: none;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .poisk {
+    margin-top: 17px;
+  }
+  
+ .long a { line-height:1; display:table; text-align:left; margin-top: 5px}
+
+ 
+}
+
+@media screen and (max-width : 620px) {
+ 
+  .shapka {
+    position: relative;
+  }
+
+  .logo {
+    min-width: 193px;
+  }
+
+  .logo_line1 {
+    font-size: 27px;
+  }
+
+  .center {
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .poisk {
+    display: none;
+    margin: 0;
+  }
+
+  #menu3 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+
+  .lupa {
+    display: block;
+    height: 25px;
+  }
+
+  .poisk.responsive {
+    width: 77%;
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    padding: 7px 5px 4px 5px;
+    box-shadow: 0px 0px 8px -3px #6683ce;
+    top: 53px;
+    right: 40px;
+	z-index: 99;
+  }
+
+  h1 {
+    font-size: 170%;
+    line-height: 1.5;
+  }
+
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 25px;
+ /* изменяемо */
+    font-size: 20px;
+  }
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 37px  /* изменяемо */;
+  }
+  
+  .inter {flex-direction: column !important;}
+  .inter2 {   margin-top:10px !important}
+}
+
+@media screen and (max-width : 450px) {
+
+  .shapka {
+    background: #FFFFFF url(https://niva-chevy.ru/jpg-oform/levo-fon2.png ) repeat-x;
+    height: 65px;
+  }
+
+  .logo {
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    min-width: 165px;
+    line-height: 1.2;
+    background-image: url(https://niva-chevy.ru/jpg-oform/06012.png);
+    background-repeat: no-repeat;
+    background-position: 49% 27%;
+    height: 65px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .logo_line1 {
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -5px;
+  }
+
+  .logo_line2 {
+    font-size: 67%;
+  }
+  
+  .re { display:none}
+
+}
+
+@media screen and (max-width : 310px) {
+  nav {
+    max-width: 80%;
+  }
+}
+
+.blok1 {margin:auto; margin-top:20px; margin-bottom: 20px;}
+  .rek1 {margin:auto; max-width: 728px; }
+.blok2 {margin:auto; margin-top: 26px; margin-bottom:20px; max-width:91%;  max-width:950px }
+.blok3 {margin:auto; margin-top:20px;  max-width: 728px;  }
+  .rek3 {margin:auto; max-width: 728px;}
+@media (min-width:800px) { .rek1 {margin:auto; max-width:728px; height: 90px; } }

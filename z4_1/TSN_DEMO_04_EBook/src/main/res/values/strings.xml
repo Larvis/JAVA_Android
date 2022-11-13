@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ERM_DEMO_04_EBook</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="name_program">eBook cars, 2022</string>
+
+    <string name="resource_directory">file:///android_asset/HTML/</string>
+
+    <string name="action_settings">Выход</string>
+    <string name="view">Перейти к чтению…</string>
+    <string name="fullsizeFont">Большой шрифт</string>
+    <string name="bonus">Бонус</string>
+    <string name="lit">Литература</string>
+    <string name="autor">Ермолаев С.В. ВТИП-302с</string>
+
+    <string name="additional">Форумы и ссылки</string>
+    <string name="error">Ошибка(</string>
+
+    <string name="drive2">https://drive2.ru</string>
+    <string name="niva_wiki">https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B2%D0%B0_(%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C)</string>
+    <string name="chevy_niva">https://www.chevy-niva.ru/n/index.php</string>
+
+    <string name="laws">ЗАКОНЫ</string>
+    <string name="laws_kz_l1">РК: оПДиИЗ</string>
+    <string name="laws_ru_l1">РФ: оПД</string>
+    <string name="communicate">Обратная связь</string>
+    <string name="send_mail">Написать отзыв</string>
+
+    <string name="email">proffix4@gmail.com</string>
+    <string name="subject">Предложения по программе</string>
+    <string name="textmail">Здравствуйте !</string>
+    <string name="sending_letter">Посылка письма автору</string>
+    <string name="no_installed_email_client">Нет установленного почтового клиента</string>
+
+    <string name="search_hint">Поиск</string>
+    <string name="of">из</string>
+    <string name="not_found">увы…</string>
+
+    <string name="mysearch">ВКЛ. ПОИСК</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lec1"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/lec1" />
+        <item
+            android:id="@+id/lec2"
+            android:icon="@drawable/ic_kuzov"
+            android:title="@string/lec2" />
+        <item
+            android:id="@+id/lec3"
+            android:icon="@drawable/ic_transm"
+            android:title="@string/lec3" />
+        <item
+            android:id="@+id/lec4"
+            android:icon="@drawable/ic_scep"
+            android:title="@string/lec4" />
+    </group>
+
+    <item android:title="@string/bonus">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/lec5"
+                    android:icon="@drawable/ic_electric_car"
+                    android:title="@string/lec5" />
+                <item
+                    android:id="@+id/lec6"
+                    android:icon="@drawable/ic_car_crash"
+                    android:title="@string/lec6" />
+                <item
+                    android:id="@+id/lec7"
+                    android:icon="@drawable/ic_view_list_black_24dp"
+                    android:title="@string/lec7" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/additional">
+        <menu>
+            <item
+                android:id="@+id/nav_view1"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="@string/drive2" />
+            <item
+                android:id="@+id/nav_view2"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="@string/niva_wiki" />
+            <item
+                android:id="@+id/nav_view3"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="@string/chevy_niva" />
+        </menu>
+    </item>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_drafts_black_24dp"
+                android:title="@string/send_mail" />
+        </menu>
+    </item>
+
+</menu>

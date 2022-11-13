@@ -3,23 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_cat">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_cat"
         android:name="kz.ermolaev.z4.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_cat"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="kz.ermolaev.z4.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/navigation_webview"
+        android:name="kz.ermolaev.z4.ui.home.WebviewFragment"
+        android:label="@string/title_cat"
+        tools:layout="@layout/fragment_webview" />
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="kz.ermolaev.z4.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_ext"
+        android:name="kz.ermolaev.z4.ui.home.ExtFragment"
+        android:label="@string/title_ext"
+        tools:layout="@layout/fragment_ext" />
 </navigation>
