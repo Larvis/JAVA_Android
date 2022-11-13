@@ -10,8 +10,8 @@
 * сохранение читаемого раздела для восстановления после переворота экрана И перезапуска программы
 * отправки письма автору
 
-![Screenshot](s1.png)
-![Screenshot1](s2.png)
-![Screenshot2](s3.png)
-![Screenshot3](s4.png)
-![Screenshot4](s5.png)
+![Screenshot](s1.jpg)
+![Screenshot1](s2.jpg)
+![Screenshot2](s3.jpg)
+![Screenshot3](s4.jpg)
+![Screenshot4](s5.jpg)
