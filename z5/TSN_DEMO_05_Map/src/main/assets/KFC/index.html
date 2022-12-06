@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+	<meta name="created" content="2017-03-25T22:42:10.045057085"/>
+	<meta name="changed" content="2017-03-25T22:52:08.129361121"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="ru-RU" dir="ltr">
+<div id="wrapper" class="container-fluid" style="position: relative;">
+	<div class="menu-open-overlay scrolled"></div>
+
+	<main>
+
+		<div class="modal fade main-modal" id="cancelOrderModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-colored" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">УВЕДОМЛЕНИЕ</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" class="close-modal">
+							<path fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2.8" d="M7 7L1 1l6 6 6-6-6 6zm0 0l-6 6 6-6 6 6-6-6z"></path>
+						</svg></button>
+					</div>
+					<div class="modal-body">
+						<div class="row justify-content-center">
+							<div class="col-16 text-center">
+								<div class="form-container">
+									<p class="modal-text">Ваш заказ будет потерян. Вы уверены?</p>
+
+									<div class="d-flex justify-content-center mt-4 mb-2">
+										<button class="mx-1 noBtn" data-dismiss="modal">Нет</button>
+										<button class="mx-1 yesBtn mainBgColor">Да</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><div class="modal fade main-modal" id="newAddAddressModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-login modal-colored modal-long" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Добавить новый адрес</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" class="close-modal">
+						<path fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2.8" d="M7 7L1 1l6 6 6-6-6 6zm0 0l-6 6 6-6 6 6-6-6z"></path>
+					</svg></button>
+				</div>
+				<div class="modal-body p-0">
+
+					<div class="loader d-none modal-loader">
+						<div class="mainBgColor"></div>
+						<div class="mainBgColor"></div>
+						<div class="mainBgColor"></div>
+						<div class="mainBgColor"></div>
+					</div>
+
+					<div class="row justify-content-center mx-0">
+
+						<div class="col-16 col-lg-8 suggestedGoogleAddressesSection" id="suggestedGoogleAddressesSection">
+
+							<div class="mt-4 px-3 step-1">
+								<div class="form-group pt-2">
+									<h3 class="enter-address">Внесите свой адрес</h3>
+								</div>
+								<div class="form-group">
+									<label for="newAddress_address"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" class="pin-icon account-icon">
+										<path fill="var(--color)" fill-rule="nonzero" d="M5.433.034c2.25 0 4.578 1.712 4.578 4.578 0 2.633-3.745 6.482-4.172 6.913a.572.572 0 0 1-.812 0C4.6 11.095.855 7.245.855 4.612.855 1.746 3.182.034 5.433.034zm0 5.723a1.144 1.144 0 1 0 0-2.289 1.144 1.144 0 0 0 0 2.289z"></path>
+									</svg></label>
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" class="locate-address-icon">
+										<g fill="none" fill-rule="evenodd" transform="translate(0 .25)">
+											<circle cx="12.6" cy="12.6" r="12.6" fill="var(--color)"></circle>
+											<path fill="#FFF" d="M12.04 4.2v1.71a6.72 6.72 0 0 0-6.13 6.13H4.2v1.12h1.71a6.725 6.725 0 0 0 6.13 6.137V21h1.12v-1.703a6.725 6.725 0 0 0 6.13-6.137H21v-1.12h-1.71a6.72 6.72 0 0 0-6.13-6.13V4.2h-1.12zm-.012 2.83c.004-.002.008 0 .012 0v2.397h1.12V7.029a5.592 5.592 0 0 1 5.01 5.011h-2.397v1.12h2.398a5.592 5.592 0 0 1-5.011 5.01v-2.397h-1.12v2.398a5.592 5.592 0 0 1-5.01-5.011h2.397v-1.12H7.029a5.593 5.593 0 0 1 5-5.01z"></path>
+										</g>
+									</svg>                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" class="remove-icon d-none">
+									<g fill="none" fill-rule="evenodd">
+										<path fill="#a9a9a9" d="M24.806 12.796c0 6.715-5.442 12.159-12.158 12.159-6.715 0-12.159-5.444-12.159-12.16C.49 6.082 5.933.638 12.648.638c6.716 0 12.158 5.444 12.158 12.159z"></path>
+										<path stroke="#FFF" stroke-width="2" d="M8.468 8.617l8.36 8.359M16.827 8.617l-8.359 8.359"></path>
+									</g>
+								</svg>                                <input type="text" id="newAddress_address" name="newAddress_address" class="validateInput form-control pr-40 searchGoogleAddress" placeholder="Адрес">
+									<div class="invalid-feedback"></div>
+									<div class="addresses_results d-none">
+										<ul class="list-unstyled mb-0"></ul>
+									</div>
+
+									<div class="illustration-wrapper d-flex justify-content-center">
+										<img src="/dist/images/address-illustration.svg" alt="address-illustration">
+									</div>
+
+									<div class="manual-submit d-none">
+										<div class="d-flex align-items-center">
+											<button type="button" class="submit-manually-btn mainBgColor">
+												<img src="/dist/images/mappin.svg" alt="mappin" class="mappin-icon">
+											</button>
+											<div class="ml-2">
+												<p class="not-find-address">Не нашли ваш адрес?</p>
+												<p class="submit-manually">Подать заказ вручную</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<form name="newAddAddressForm" id="newAddAddressForm" autocomplete="off" class="mt-4 px-3 d-none step-3">
+
+								<div class="form-group pt-2">
+									<h3 class="enter-address">Подтвердите свой адрес</h3>
+									<div class="invalid-feedback no_address_found"></div>
+								</div>
+
+								<div class="form-group radio-group">
+									<label for="address_type_home" class="custom-radio-container">
+										<input type="radio" value="personal" checked="checked" name="address_type" id="address_type_home" class="form-control">
+										<span class="checkmark"></span>
+										На главную                                </label>
+									<label for="address_type_work" class="custom-radio-container">
+										<input type="radio" value="business" name="address_type" id="address_type_work" class="form-control">
+										<span class="checkmark"></span>
+										Работа                                </label>
+									<div class="invalid-feedback"></div>
+								</div>
+
+								<div class="form-group">
+									<label for="friendly_name_address"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" class="pin-icon account-icon">
+										<path fill="var(--color)" fill-rule="nonzero" d="M5.433.034c2.25 0 4.578 1.712 4.578 4.578 0 2.633-3.745 6.482-4.172 6.913a.572.572 0 0 1-.812 0C4.6 11.095.855 7.245.855 4.612.855 1.746 3.182.034 5.433.034zm0 5.723a1.144 1.144 0 1 0 0-2.289 1.144 1.144 0 0 0 0 2.289z"></path>
+									</svg></label>
+									<input type="text" id="friendly_name_address" name="friendly_name_address" class="validateInput form-control pr-40" placeholder="Дружественное имя">
+									<div class="invalid-feedback"></div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-16 col-sm-6">
+										<label for="address_street" class="label-relative">Улица</label>
+										<input type="text" id="address_street" name="address_street" class="validateInput form-control updateGoogleMap">
+										<div class="invalid-feedback"></div>
+									</div>
+
+									<div class="form-group col-16 col-sm-4">
+										<label for="address_street_number" class="label-relative">номер</label>
+										<input type="text" id="address_street_number" name="address_street_number" class="form-control updateGoogleMap">
+										<div class="invalid-feedback"></div>
+									</div>
+
+									<div class="form-group col-16 col-sm-6">
+										<label for="address_po_code" class="label-relative">Почтовый индекс</label>
+										<input type="text" id="address_po_code" name="address_po_code" class="form-control updateGoogleMap">
+										<div class="invalid-feedback"></div>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-16 col-sm-10">
+										<label for="address_city" class="label-relative">Город</label>
+										<input type="text" id="address_city" name="address_city" class="form-control updateGoogleMap">
+										<div class="invalid-feedback"></div>
+									</div>
+
+									<div class="form-group col-16 col-sm-6">
+										<label for="address_area" class="label-relative">Район</label>
+										<input type="text" id="address_area" name="address_area" class="form-control">
+										<div class="invalid-feedback"></div>
+									</div>
+								</div>
+
+
+								<div class="form-row">
+
+									<div class="form-group col-16 col-sm-6">
+										<label for="newAddress_bell" class="label-relative">Квартира / Домофон</label>
+										<input type="text" id="newAddress_bell" name="newAddress_bell" class="validateInput form-control">
+										<div class="invalid-feedback"></div>
+									</div>
+
+									<div class="form-group col-16 col-sm-4">
+										<label for="newAddress_floor" class="label-relative">Этаж</label>
+										<input type="text" id="newAddress_floor" name="newAddress_floor" class="validateInput form-control">
+										<div class="invalid-feedback"></div>
+									</div>
+
+									<div class="form-group col-16 col-sm-6">
+										<label for="newAddress_phone" class="label-relative">Контактный телефон</label>
+										<input type="tel" id="newAddress_phone" name="newAddress_phone" class="validateInput form-control" minlength="11" maxlength="11" pattern="^(77)[0-9-+s()]*$">
+										<div class="invalid-feedback"></div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="address_comments" class="label-relative">Комментарии к доставке</label>
+									<input type="text" id="newAddress_comments" name="newAddress_comments" class="form-control">
+									<div class="invalid-feedback"></div>
+								</div>
+
+								<span class="formMessage error_message not_service_availability_error d-none"> Сожалеем, но в настоящее время мы не обслуживаем ваш регион!</span>
+
+								<span class="formMessage error_message show_error_message d-none"></span>
+
+								<div class="form-group mt-5 addAddressSubmitSection">
+									<button type="button" class="addAddressSubmit submitBtn mainBgColor w-100">Подтвердить и сохранить адрес</button>
+								</div>
+
+								<div class="form-group row justify-content-center align-items-center mt-3 addAddress_efood_wolt_icons_section pb-2 d-none">
+									<div class="col-16">
+										<p class="main_message text-center"></p>
+									</div>
+									<div class="col-auto">
+										<a href="javascript:void(0)" class="efood_link">
+											<img src="/dist/images/efood.svg" alt="efood-icon" class="service-icon">
+										</a>
+									</div>
+									<div class="col-auto">
+										<a href="javascript:void(0)" class="wolt_link">
+											<img src="/dist/images/wolt.svg" alt="wolt-icon" class="service-icon">
+										</a>
+									</div>
+								</div>
+
+								<div class="popover-required d-none">Поле обязательное для заполнения </div>
+								<div class="popover-tel d-none">77xxxxxxxxx - скорректируйте формат</div>
+								<div class="popover-mobile-length d-none">Please, insert at least 11 characters</div>
+
+							</form>
+
+						</div>
+						<div class="col-16 col-lg-8 px-0">
+							<div id="new_address_map" class="map-section" data-lat="" data-lng="">
+								<div class="markerImage d-none"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="51" viewBox="0 0 36 51" class="marker-image">
+									<path fill="#e4002b" fill-rule="evenodd" d="M18 26.54c-4.608 0-8.342-3.786-8.342-8.457 0-4.668 3.734-8.455 8.342-8.455 4.607 0 8.342 3.787 8.342 8.455 0 4.671-3.735 8.457-8.342 8.457M18 0C8.059 0 0 8.169 0 18.243 0 30.21 16.881 50.046 16.881 50.046c.925 1.272 1.312 1.272 2.237 0C19.118 50.048 36 30.209 36 18.243 35.999 8.169 27.94 0 18 0"></path>
+								</svg></div>
+							</div>
+							<div class="message-banner d-none">Если маркер установлен в неверной точке</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><ul class="list-unstyled address_suggestion_clone d-none">
+		<li class="nav-item">
+			<svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" class="pin-icon">
+				<path fill="#292929" fill-rule="nonzero" d="M6.947.862C3.388.866.504 3.762.5 7.338c0 3.49 5.934 9.181 6.186 9.42.147.139.376.139.522 0 .253-.239 6.186-5.93 6.186-9.42C13.391 3.763 10.506.866 6.947.862zm0 8.38a2.28 2.28 0 0 1-2.275-2.285 2.28 2.28 0 0 1 2.275-2.286 2.28 2.28 0 0 1 2.276 2.286 2.283 2.283 0 0 1-2.276 2.286z"></path>
+			</svg>
+			<span class="ml-2 address-item">Τερψιθέας 4Α, 153 41, Αγία Παρασκευή</span>
+		</li>
+	</ul><div class="carousel-item banner_template d-none">
+		<img src="/dist/images/loader-dark.svg" data-src="" alt="" class="d-block w-100">
+		<div class="embed-container d-none justify-content-center">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="" allowfullscreen=""></iframe>
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="url_link">
+			<div class="card-img-overlay">
+				<div class="overlay-gradient"></div>
+				<div class="card offer-card d-none">
+					<div class="card-body">
+						<div class="offer">
+							<h1 class="card-title"></h1>
+							<div class="card-text"></div>
+							<button class="offer-btn mainBgColor mainBorderColor" data-link=""></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+		<li data-target="#homeCarousel" data-slide-to="" class="carousel_indicators_template d-none"></li>
+		<section id="about" class="p-header page">
+			<div class="container my-5">
+				<div class="row">
+
+					<div class="container header_section w-100 position-relative">
+						<div id="homeCarousel" class="carousel slide w-100" data-ride="carousel" data-interval="5000">
+							<ol class="carousel-indicators d-none"></ol>
+							<div class="carousel-inner"><div class="carousel-item active">
+
+								<div class="embed-container justify-content-center">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/632025767?h=487ba8b6d9&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0" allowfullscreen=""></iframe>
+									</div>
+								</div>
+
+							</div></div>
+						</div>
+					</div>
+
+					<header class="col-16 my-4 pt-3">
+						<h1 class="custom-page-header">ОРИГИНАЛЬНЫЙ РЕЦЕПТ ИЗ КУРИЦЫ, ПОКОРИВШИЙ МИР</h1>
+					</header>
+
+					<div class="col-16 col-lg-15 xl-14 mx-auto">
+						<div class="custom-content">
+							<p class="p1">KFC был основан в Америке Харландом Сандерсом в возрасте 62 лет и после того, как он ранее пытался выполнять различные работы: капитаном на пароме, страховщиком, продавцом в магазине осветительных приборов, юристом, продавцом шин и даже акушером-любителем!</p>
+							<p class="p2">Он потерпел неудачу во всех этих сферах, так сильно, что даже пытался покончить жизнь<span class="s1"> самоубийством!</span></p>                    </div>
+					</div>
+				</div>
+
+				<ul class="timeline">
+					<li>
+						<div class="card animated direction-sm-r direction-l fadeInLeftBig">
+							<span class="flag">1930</span>
+							<div class="card-body">
+								<img src="https://www.kfc.kz/admin/files/3044.jpg" alt="Все началось на заправочной станции." class="card-img-top">
+								<div class="card-title pb-1">Все началось на заправочной станции.</div>
+								<div class="card-text"><p class="p1">Все это продолжалось до 1930 года. Затем он взял в аренду заправочную станцию, на которой был ресторан. Там он начал подавать путешественникам курицу, которую приготовил сам по рецепту, который знал только он!</p></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card animated direction-sm-r direction-r fadeInRightBig">
+							<span class="flag">1940</span>
+							<div class="card-body">
+								<img src="https://www.kfc.kz/admin/files/3045.jpg" alt="Волшебное число 11" class="card-img-top">
+								<div class="card-title pb-1">Волшебное число 11</div>
+								<div class="card-text"><p class="p1">Десять лет спустя, в 1940 году, он усовершенствовал свой рецепт. В нем было 11 специй и трав, часть которых была выгравирована за дверью кухни той заправки.</p></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card animated direction-sm-r direction-l fadeInLeftBig">
+							<span class="flag">1952</span>
+							<div class="card-body">
+								<img src="https://www.kfc.kz/admin/files/3046.jpg" alt="... золотой секретный рецепт" class="card-img-top">
+								<div class="card-title pb-1">... золотой секретный рецепт</div>
+								<div class="card-text"><p class="p1">Первый KFC открылся в 1952 году, а в 1955 году, запатентовав уникальный рецепт, Сандерс провел марафон по сбору средств на развитие бренда.&nbsp; Он провел более 1000 встреч и, наконец, в 1964 году, в возрасте 74 лет, продал KFC инвесторам за 2 миллиона долларов!<span class="Apple-converted-space">&nbsp;</span></p></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card animated direction-sm-r direction-r fadeInRightBig">
+							<span class="flag">2021</span>
+							<div class="card-body">
+								<img src="https://www.kfc.kz/admin/files/3047.jpg" alt="KFC сегодня" class="card-img-top">
+								<div class="card-title pb-1">KFC сегодня</div>
+								<div class="card-text"><p class="p1"><span class="s1">Более&nbsp; 21&thinsp;000 ресторанов KFC работают в более чем в 130 странах мира.</span></p>
+									<p class="p2">KFC любит весь мир, как и весь мир любит KFC.</p>
+									<p class="p1"><span class="s1">Оригинальный рецепт Харланда Сандерса «11 трав и специй» по сей день считается одной из наиболее известных коммерческих тайн в индустрии питания. Вы можете быть уверены в оригинальности вкуса KFC!</span></p></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<script>
+    var pageBanners = {"desktop":[{"id":575,"account_id":16,"file_id":null,"meeting_room_id":null,"timer":null,"media_type":3,"media_url":"https:\/\/player.vimeo.com\/video\/632025767?h=487ba8b6d9&amp;title=0&amp;byline=0&amp;portrait=0","title":"Наша история","address":null,"lat":null,"lng":null,"coordinates":null,"description":null,"zone_id":1507,"type":1,"availability_type":1,"b2b_availability":1,"url":null,"target_blank":0,"source":null,"priority":1,"public":1,"view_counter":0,"the_date":null,"duration":null,"button_title":"Наша история","custom_code":null,"c1":null,"c2":null,"c_stamp":"2021-03-10 18:55:45","cuid":100757,"m_stamp":"2022-01-18 06:56:56","muid":127766,"active":1,"_files":[],"_base_image":"https:\/\/www.kfc.kz\/admin\/","_tags":[],"_availability":[],"_zone":{"title":"about-us","width":null,"height":null,"timer":null}}]};
+</script>    </main>
+
+	<footer>
+		<section id="footer-top">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-16 col-md-6 col-lg-4 col-xl-3">
+						<a href="/">
+
+							<img src="https://www.kfc.kz/admin/files/3190.svg" alt="logo-img" class="logo-img">
+						</a>
+						<p class="mt-3 nav-link">
+							<a class="phoneIconLink" data-tel="7797" href="tel:7797">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21" class="phone-icon">
+									<path fill="var(--color)" fill-rule="evenodd" d="M.426 2.52c-.641 4.46 4.378 10.592 6.921 13.531 1.691 1.696 3.695 3.677 6.144 4.03 1.141.166 3.664-2.303 3.817-3.394-.059-.799-3.225-3.342-4.201-3.909-.674-.233-2.482.743-2.815.779-.407-.059-4.412-5.368-4.526-6.014-.044-.24 1.843-1.91 1.515-2.91C7.055 3.935 5.674.94 5.23.286 3.444-.549.573 1.483.426 2.525v-.004z"></path>
+								</svg>                                7797                            </a>
+						</p>
+					</div>
+					<div class="col-16 col-md-10 col-xl-9">
+						<div class="row footer-navigation">
+							<div class="col-16 col-lg-auto">
+								<button class="nav-head mainColor" data-toggle="" data-target="#footer-collapse-1380" role="button" aria-expanded="false" aria-controls="footer-collapse-1380">Информация                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="plus-icon qty-icon">
+									<path fill="#000000" fill-rule="nonzero" d="M6.914 6.787v-6h2v6h6v2h-6v6h-2v-6h-6v-2h6z"></path>
+								</svg>                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="3" viewBox="0 0 15 3" class="minus-icon qty-icon">
+									<path fill="#000" fill-rule="nonzero" d="M.193.67h14v1.4h-14z"></path>
+								</svg>                                    </button>
+								<div id="footer-collapse-1380" class="collapse">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="/about-us" title="История">История</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link header-menu" href="javascript:void(0)" title="Меню">Меню</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/eleven-ingredients" title="11 Ингредиентов!">11 Ингредиентов!</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="https://www.kfc.kz/admin/files/4391.pdf" target="_blank" title="Аллергены">Аллергены</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/stores" title="Рестораны">Рестораны</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/page/halal-certificate" title="Сертифицировано Халал">Сертифицировано Халал</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-16 col-lg-auto">
+								<button class="nav-head mainColor" data-toggle="" data-target="#footer-collapse-1385" role="button" aria-expanded="false" aria-controls="footer-collapse-1385">Нужна помощь?                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="plus-icon qty-icon">
+									<path fill="#000000" fill-rule="nonzero" d="M6.914 6.787v-6h2v6h6v2h-6v6h-2v-6h-6v-2h6z"></path>
+								</svg>                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="3" viewBox="0 0 15 3" class="minus-icon qty-icon">
+									<path fill="#000" fill-rule="nonzero" d="M.193.67h14v1.4h-14z"></path>
+								</svg>                                    </button>
+								<div id="footer-collapse-1385" class="collapse">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="/contact-us" title="Связаться с нами">Связаться с нами</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/careers" title="Карьера в KFC">Карьера в KFC</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/page/business-kfc" title="Бизнес с KFC">Бизнес с KFC</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/faq" title="Часто задаваемые вопросы">Часто задаваемые вопросы</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-16 col-lg-auto">
+								<button class="nav-head mainColor" data-toggle="" data-target="#account-collapse" role="button" aria-expanded="false" aria-controls="account-collapse">Аккаунт                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="plus-icon qty-icon">
+									<path fill="#000000" fill-rule="nonzero" d="M6.914 6.787v-6h2v6h6v2h-6v6h-2v-6h-6v-2h6z"></path>
+								</svg>                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="3" viewBox="0 0 15 3" class="minus-icon qty-icon">
+									<path fill="#000" fill-rule="nonzero" d="M.193.67h14v1.4h-14z"></path>
+								</svg>                                </button>
+								<ul id="account-collapse" class="nav flex-column collapse">
+									<li class="nav-item">
+										<a class="nav-link" href="javascript:;" data-toggle="modal" data-target="#loginModal">Войти</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="javascript:;" data-toggle="modal" data-target="#signupModal">Регистрация </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#forgotPassModal" data-toggle="modal">Забыл пароль</a>
+									</li>
+								</ul>
+
+							</div>
+							<div class="d-none d-lg-block col-lg-auto">
+								<button class="nav-head mainColor" role="button">Подписывайтесь на нас:</button>
+								<div class="d-flex flex-wrap mt-3">
+									<a href="https://www.facebook.com/kfckz" target="_blank" class="social-link">
+										<img src="https://www.kfc.kz/admin/files/3168.svg" alt="FB" class="social-icon">
+									</a>
+									<a href="https://www.instagram.com/kfc_kz" target="_blank" class="social-link">
+										<img src="https://www.kfc.kz/admin/files/3169.svg" alt="Instagram" class="social-icon">
+									</a>
+									<a href="https://www.vk.com/kfckz" target="_blank" class="social-link">
+										<img src="https://www.kfc.kz/admin/files/4418.svg" alt="VK" class="social-icon">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-none d-lg-block col-lg-2 col-xl-4">
+						<div class="d-flex flex-wrap justify-content-end align-items-center">
+							<a href="/page/halal-certificate" target="_self">
+								<img src="https://www.kfc.kz/admin/files/thumbs/thumb_3746.png" alt="Halal Certified" class="c-card-img">
+							</a>
+							<img src="https://www.kfc.kz/admin/files/thumbs/thumb_1916.png" alt="Mastercard" class="c-card-img">
+							<img src="https://www.kfc.kz/admin/files/thumbs/thumb_2165.jpg" alt="Visa" class="c-card-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="footer-middle" class="d-lg-none mainBorderColor">
+			<div class="container">
+				<div class="d-flex flex-wrap justify-content-center align-items-center">
+					<span class="follow_title">Подписывайтесь на нас:</span>
+
+					<div class="d-flex flex-wrap align-items-center">
+						<a href="https://www.facebook.com/kfckz" target="_blank" class="d-flex social-link">
+							<img src="https://www.kfc.kz/admin/files/3168.svg" alt="FB" class="social-icon">
+						</a>
+						<a href="https://www.instagram.com/kfc_kz" target="_blank" class="d-flex social-link">
+							<img src="https://www.kfc.kz/admin/files/3169.svg" alt="Instagram" class="social-icon">
+						</a>
+						<a href="https://www.vk.com/kfckz" target="_self" class="d-flex social-link">
+							<img src="https://www.kfc.kz/admin/files/4418.svg" alt="VK" class="social-icon">
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="footer-bottom" class="mainBgColor">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-16 col-lg-auto">
+						<ul class="nav subfooter-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="/page/privacy-policy">
+									Политика конфиденциальности                                    </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/page/terms-and-conditions">
+									Условия пользования                                    </a>
+							</li>
+						</ul>
+					</div>
+					<div class="copyrights-col col-16 col-md-auto d-flex justify-content-center justify-content-md-start justify-content-lg-center">
+						<p class="footer-text copyrights-text">© 2022 KFC International Holdings Inc. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="footer_stripes" class="mainBgColor">
+			<div class="container">
+				<div class="row">
+					<div class="col-16 text-center">
+						<img src="/dist/images/stripes.png" alt="stripes-icon" class="stripes-icon">
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<button class="up_arrow on bottom_up">
+		<svg width="90px" height="89px" viewBox="0 0 90 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<title>Up icon</title>
+			<g id="screenshots" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Up-icon" transform="translate(0.500000, 0.000000)">
+					<circle id="Oval" fill="var(--color)" cx="44.5" cy="44.5" r="44.5"></circle>
+					<g id="noun_Arrow-Up_3465785-Copy" transform="translate(25.500000, 33.000000)" fill="#FFFFFF" fill-rule="nonzero">
+						<g id="Path">
+							<polygon points="4 21.5355339 18 7.5355339 32 21.5355339 35.5355339 18 18 0.4644661 0.4644661 18"></polygon>
+						</g>
+					</g>
+				</g>
+			</g>
+		</svg></button>
+
+	<!--
+    --><input type="hidden" name="csrf_token" id="csrf_token" value="72da969a2f8f884aa9977778470008f239865f623598ac32e3101f7d39339561">
+</div>
+</body>
+</html>

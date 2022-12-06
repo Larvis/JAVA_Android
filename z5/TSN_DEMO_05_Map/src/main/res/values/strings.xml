@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ERM_DEMO_05_Map</string>
+    <string name="title_activity_maps">ERM_DEMO_05_Map</string>
+    <string name="selectOb">Выберите нужный объект</string>
+    <string name="selectMarker">selectMarker</string>
+    <string name="title_activity_detail">Map</string>
+    <string name="detail">Подробно…</string>
+    <string name="back">НАЗАД</string>
+    <string name="tMarker">tMarker</string>
+    <string name="mfile">mfile</string>
+    <string-array name="numbers">
+        <item>Выберите ... </item>
+        <item>FixPrice</item>
+        <item>Small and Skiff</item>
+        <item>BURЖУЙ</item>
+        <item>Velvet Burger</item>
+        <item>KFC</item>
+        <item>BatyrMall</item>
+    </string-array>
+</resources>

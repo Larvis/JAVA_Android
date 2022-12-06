@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/normal_map"
+        android:orderInCategory="1"
+        android:title="Обычная"
+        />
+    <item
+        android:id="@+id/sat_map"
+        android:orderInCategory="2"
+        android:title="Спутник"
+        />
+    <item
+        android:id="@+id/hybrid_map"
+        android:orderInCategory="3"
+        android:title="Гибрид"
+        />
+</menu>

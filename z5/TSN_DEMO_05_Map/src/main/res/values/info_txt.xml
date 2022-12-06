@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="startMarker_id">m0</string>
+    <string name="startMarker_title">Места покушать</string>
+    <string name="startMarker_info">
+        <![CDATA[
+               <b>В Павлодаре есть много мест для того чтобы купить еды и быстро покушать.</b> <BR>
+               FIX price, small, kfc, burжуй, velvet burger, batyrmall<BR>
+        ]]>
+        </string>
+    <string name="startMarker_file"></string>
+
+    <!--  -->
+
+    <string name="marker1_id">m1</string>
+    <string name="marker1_title">Fix price</string>
+    <string name="marker1_txt_click">Fix price</string>
+    <string name="marker1_info">
+        <![CDATA[
+        <b>Fix Price — российская сеть магазинов</b> <BR>
+         в формате «магазин фиксированных цен», <BR>
+        управляющая компания ООО «Бэст Прайс». Сеть включает в себя более 4800 магазинов,<BR>
+         работающих в более чем 1300 населённых пунктах в 79 регионах России, <BR>
+         а также в Грузии, Казахстане, Латвии, Белоруссии, Узбекистане и Киргизии.<BR>
+         Вакансии офиса:<BR>
+            hr-kz@fix-price.ru<BR>
+            + 7 (705) 555-25-73
+            https://fix-price.kz/
+
+        ]]>
+        </string>
+    <string name="marker1_file">file:///android_asset/FIX/index.html</string>
+
+    <!--  -->
+
+    <string name="marker2_id">m2</string>
+    <string name="marker2_title">Small and skiff</string>
+    <string name="marker2_txt_click">Small and skiff</string>
+    <string name="marker2_info">
+        <![CDATA[
+        <b>SMALL & Skif — сеть супермаркетов в Казахстане.</b> <BR>
+
+        На 2021 г. в сети насчитывается более 100 магазинов <BR>
+        в 16 городах Казахстана: супермаркеты, магазины у дома, магазины напитков и оптомаркеты.<BR>
+
+        Компания входит в ТОП 50 частных компании Казахстана на январь 2018 года.<BR>
+
+        Первый магазин был открыт в 1999 году в городе Алматы.<BR>
+        В ассортименте сети насчитывается около 35 тысяч наименований товаров: продукты питания, бытовая химия, одежда, non-food.
+
+        Сеть развивает собственное производство. <BR>
+        В больших супермаркетах производство осуществляется на базе магазина, <BR>
+        в остальные магазины товары развозятся с региональных фабрик-кухонь. <BR>
+        Все кондитерские изделия производятся силами SMALL.        <BR>
+
+        Контакты   <BR>
+        Горячая линия   <BR>
+        +7 800 070 7170 <BR>
+          бесплатно каждый день с 9:00 до 20:00   <BR>
+           <BR>   <BR>
+        Подскажем и поможем с любым вопросом
+        Хотите работать у нас?    <BR>
+        rabota@small.kz   <BR>   <BR>
+        https://small.kz/ru
+        ]]>
+        </string>
+    <string name="marker2_file">file:///android_asset/SMALL/index.html</string>
+
+    <string name="marker3_id">m3</string>
+    <string name="marker3_title">BurЖуй</string>
+    <string name="marker3_txt_click">BurЖуй - шаурма</string>
+    <string name="marker3_info">
+        <![CDATA[
+        <b></b> <BR>
+        Наши адреса:<BR>
+        Лермонтова 98/1 ТД "Туркестан" возле магазина "Всё для новоселов"<BR>
+
+        Ломова 52 (напротив ИННЕУ)<BR>
+
+        Чокина 143 (Прогресс)<BR>
+
+        Ак. Сатпаева 252 (напротив ТД Атриум)<BR>
+
+        Толстого 90 (угол Катаева)<BR>
+
+        Центральный Универмаг<BR>
+
+        Привокзальная площадь 1/1<BR>
+
+        Св. Эста Стоп Ярмарка<BR>
+
+        Мы работаем 24 часа.<BR>
+
+        Доставка с 11.00 до 23.00 <BR>
+        тел .: 8 771 801 12 12 <BR>
+        8 708 46 67 008 <BR>
+        667 008 <BR>
+        Доставка 400 город, 500 микрорайонов. <BR>
+        +7 (771) 801-12-12 Казахстан, Павлодар ,Лермонтова ул. 98/1 <BR>
+        ]]>
+        </string>
+    <string name="marker3_file">file:///android_asset/BUR/index.html</string>
+
+    <string name="marker4_id">m4</string>
+    <string name="marker4_title">Velvet burger</string>
+    <string name="marker4_txt_click">Velvet - ресторан</string>
+    <string name="marker4_info">
+        <![CDATA[
+        <b> </b> <BR>
+        Быстрая доставка еды на дом из ресторана VELVET BURGER на сайте сервиса заказов еды FoodGo.kz.<BR>
+        Доставка еды, быстрая доставка, меню, VELVET BURGER, блюда, еда на дом, цены, акции, еда в офис<BR>
+        О VELVET BURGER<BR>
+        VB - первый в городе ресторан с «правильными бургерами». Они невероятно вкусные и сочные:Пышные, румяные булочки по-домашнемуКотлеты из мраморной говядины, от собственного фермерского хозяйства «ДАНЕКЕР» Хрустящая курочка с ароматными специямиСалаты, приготовленные на основе, вкуснейших авторских соусовНапитки из свежих фруктов, сделанные вручнуюИ многое, многое другое!Вам стоит только позвонить, и мы выполним Ваш заказ ВКУСНО, БЫСТРО и доставим в СРОК!Вельвет Бургер - все лучшее здесь!!!
+        <BR>
+        Режим работы <BR>
+        С 10:00 до 23:45 <BR>
+        http://vezuedu.kz/subdomain/?id=46 <BR>
+        ]]>
+        </string>
+    <string name="marker4_file">file:///android_asset/VEL/index.html</string>
+
+    <string name="marker5_id">m5</string>
+    <string name="marker5_title">KFC</string>
+    <string name="marker5_txt_click">KFC - ресторан фастфуда</string>
+    <string name="marker5_info">
+        <![CDATA[
+      Kentucky Fried Chicken, сокращённо KFC — международная <br>
+      сеть ресторанов общественного питания, специализирующаяся на блюдах из курицы.<br>
+       Штаб-квартира компании располагается в городе Луисвилле в штате Кентукки.<br>
+       KFC — вторая по торговому обороту сеть кафе в мире, уступающая лишь компании McDonalds.
+       <br>
+       Ежедневно с 10:00 до 21:00<br>
+        7797 <br>
+        kfc.kz <br>
+
+        ]]>
+        </string>
+    <string name="marker5_file">file:///android_asset/KFC/index.html</string>
+
+    <string name="marker6_id">m6</string>
+    <string name="marker6_title">BATYRMall</string>
+    <string name="marker6_txt_click">ТРЦ</string>
+    <string name="marker6_info">
+        <![CDATA[
+            улица Камзина, 67/1, 2, 3 этаж<br>
+            Павлодар, Павлодар городская администрация, 140011<br>
+            3 этажа<br>
+           Гринвич <br>
+
+            10 парковок <br>
+            Ежедневно с 10:00 до 22:00 <br>
+            +7 (7182) 66‒15‒70  <br>
+            batyrmall.kz  <br>
+
+        ]]>
+        </string>
+    <string name="marker6_file">file:///android_asset/BAT/index.html</string>
+</resources>

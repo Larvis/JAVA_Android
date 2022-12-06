@@ -37,6 +37,7 @@ public class ResultActivity extends AppCompatActivity {
     // МЕТОД ДЛЯ КНОПКИ ВЫХОДА
     public void onExit(View v) {
         finishAffinity();
+        System.exit(0);
     }
 
 }
