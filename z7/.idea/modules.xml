@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/z7.iml" filepath="$PROJECT_DIR$/.idea/modules/z7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.unitTest.iml" />
+    </modules>
+  </component>
+</project>
