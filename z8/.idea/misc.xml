@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/talip/Development/Projects/AndroidStudioProjects/TSN_DEMO_08_JSOUP/TSN_DEMO_08_JSOUP_MICRO/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/talip/Development/Projects/AndroidStudioProjects/TSN_DEMO_08_JSOUP/TSN_DEMO_08_JSOUP_Rates/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/talip/Development/Projects/AndroidStudioProjects/TSN_DEMO_07_JSON/TSN_DEMO_07_JSON_MICRO/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/talip/Development/Projects/AndroidStudioProjects/TSN_DEMO_07_JSON/TSN_DEMO_07_JSON_Weather/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="TSN_DEMO_07_JSON_MICRO/src/main/res/drawable/layout_border.xml" value="0.196" />
+        <entry key="TSN_DEMO_07_JSON_MICRO/src/main/res/layout/activity_main.xml" value="0.23958333333333334" />
+        <entry key="TSN_DEMO_07_JSON_MICRO/src/main/res/layout/card.xml" value="0.55" />
+        <entry key="TSN_DEMO_07_JSON_MICRO/src/main/res/layout/card_widget.xml" value="0.335" />
       </map>
     </option>
   </component>

@@ -11,8 +11,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/TSN_DEMO_08_JSOUP_MICRO" />
-            <option value="$PROJECT_DIR$/TSN_DEMO_08_JSOUP_Rates" />
+            <option value="$PROJECT_DIR$/TSN_DEMO_07_JSON_MICRO" />
+            <option value="$PROJECT_DIR$/TSN_DEMO_07_JSON_Weather" />
           </set>
         </option>
       </GradleProjectSettings>

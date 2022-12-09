@@ -93,20 +93,17 @@ public class MainActivity extends AppCompatActivity {
                 for(int i = 0; i < allData.length(); i++) {
                     JSONObject obj = allData.getJSONObject(i);
                     //store your variable
-                        String j_name = obj.getString("name");
-                        String j_full_name = obj.getString("full_name");
-                        String j_language = obj.getString("language");
-                        String j_forks = obj.getString("forks");
-                        String j_watchers = obj.getString("watchers");
+                    String j_name = obj.getString("name");
+                    String j_full_name = obj.getString("full_name");
+                    String j_language = obj.getString("language");
+                    String j_forks = obj.getString("forks");
+                    String j_watchers = obj.getString("watchers");
 
                     String j_stargazers_count = obj.getString("stargazers_count");
                     String j_avatar_url = obj.getJSONObject("owner").getString("avatar_url");
                     String j_url = obj.getJSONObject("owner").getString("html_url");
 
-//                return;
-                ///////-----------------------
-//
-//                "name":"FarManager",
+//                         "name":"FarManager",
 //                        "full_name":"FarGroup/FarManager",
 //                        "language":"C++",
 //                        "forks":172,
@@ -114,12 +111,10 @@ public class MainActivity extends AppCompatActivity {
 //                        "stargazers_count":1388,
 //
 //                        "owner":{
-//                    "avatar_url":"https://avatars.githubusercontent.com/u/3636093?v=4",
-//                            "url":"https://api.github.com/users/FarGroup",
-
+//                              "avatar_url":"https://avatars.githubusercontent.com/u/3636093?v=4",
+//                              "url":"https://api.github.com/users/FarGroup",
 
                         card = inflater.inflate(R.layout.card_widget, null);
-
 
                         ImageView avatar = (ImageView) card.findViewById(R.id.avatar);       // Аватар
                         TextView name = (TextView) card.findViewById(R.id.name);// Имя

@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_MICRO/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_MICRO.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_08_JSOUP_Rates/TSN_DEMO_08_JSOUP.TSN_DEMO_08_JSOUP_Rates.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/z7.iml" filepath="$PROJECT_DIR$/.idea/modules/z7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_MICRO/z7.TSN_DEMO_07_JSON_MICRO.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_07_JSON_Weather/z7.TSN_DEMO_07_JSON_Weather.unitTest.iml" />
     </modules>
   </component>
 </project>

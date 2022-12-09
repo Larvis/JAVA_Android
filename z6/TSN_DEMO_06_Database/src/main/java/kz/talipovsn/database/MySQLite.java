@@ -13,17 +13,21 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class MySQLite extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 2; // НОМЕР ВЕРСИИ БАЗЫ ДАННЫХ И ТАБЛИЦ !
+    private static final int DATABASE_VERSION = 8 ; // НОМЕР ВЕРСИИ БАЗЫ ДАННЫХ И ТАБЛИЦ !
 
-    static final String DATABASE_NAME = "phones"; // Имя базы данных
+    static final String DATABASE_NAME = "tv"; // Имя базы данных
 
-    static final String TABLE_NAME = "emergency_service"; // Имя таблицы
+//    Модель | Цвет | WIFI | Разрешение | SmartTV | Диагональ
+    static final String TABLE_NAME = "sony_tv"; // Имя таблицы
     static final String ID = "id"; // Поле с ID
-    static final String NAME = "name"; // Поле с наименованием организации
-    static final String NAME_LC = "name_lc"; // // Поле с наименованием организации в нижнем регистре
-    static final String PHONE_NUMBER = "phone_number"; // Поле с телефонным номером
+    static final String MODEL = "model"; // Поле с наименованием организации
+    static final String INCH = "inch"; // // Поле с наименованием организации в нижнем регистре
+    static final String COLOR = "color"; // Поле с наименованием организации
+    static final String RAZR = "razr"; // Поле с наименованием организации
+    static final String WIFI = "wifi"; // Поле с наименованием организации
+    static final String SMART = "smart"; // Поле с наименованием организации
 
-    static final String ASSETS_FILE_NAME = "telephone.txt"; // Имя файла из ресурсов с данными для БД
+    static final String ASSETS_FILE_NAME = "tv.txt"; // Имя файла из ресурсов с данными для БД
     static final String DATA_SEPARATOR = "|"; // Разделитель данных в файле ресурсов с телефонами
 
     private Context context; // Контекст приложения
@@ -38,9 +42,14 @@ public class MySQLite extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_NAME + "("
                 + ID + " INTEGER PRIMARY KEY,"
-                + NAME + " TEXT,"
-                + NAME_LC + " TEXT,"
-                + PHONE_NUMBER + " TEXT" + ")";
+                + MODEL + " TEXT,"
+                + INCH + " TEXT,"
+                + COLOR + " TEXT,"
+                + RAZR + " TEXT,"
+                + WIFI + " TEXT,"
+                + SMART + " TEXT"
+                + ")";
+
         db.execSQL(CREATE_CONTACTS_TABLE);
         System.out.println(CREATE_CONTACTS_TABLE);
         loadDataFromAsset(context, ASSETS_FILE_NAME,  db);
@@ -55,11 +64,15 @@ public class MySQLite extends SQLiteOpenHelper {
     }
 
     // Добавление нового контакта в БД
-    public void addData(SQLiteDatabase db, String name, String phoneNumber) {
+    public void addData(SQLiteDatabase db, String model, String inch, String color, String razr, String wifi, String smart) {
         ContentValues values = new ContentValues();
-        values.put(NAME, name);
-        values.put(NAME_LC, name.toLowerCase());
-        values.put(PHONE_NUMBER, phoneNumber);
+        values.put(MODEL, model);
+        values.put(INCH, inch.toLowerCase());
+        values.put(COLOR, color.toLowerCase());
+        values.put(RAZR, razr.toLowerCase());
+        values.put(WIFI, wifi.toLowerCase());
+        values.put(SMART, smart.toLowerCase());
+
         db.insert(TABLE_NAME, null, values);
     }
 
@@ -78,9 +91,13 @@ public class MySQLite extends SQLiteOpenHelper {
                 String strTrim = str.trim(); // Убираем у строки пробелы с концов
                 if (!strTrim.equals("")) { // Если строка не пустая, то
                     StringTokenizer st = new StringTokenizer(strTrim, DATA_SEPARATOR); // Нарезаем ее на части
-                    String name = st.nextToken().trim(); // Извлекаем из строки название организации без пробелов на концах
-                    String phoneNumber = st.nextToken().trim(); // Извлекаем из строки номер организации без пробелов на концах
-                    addData(db, name, phoneNumber); // Добавляем название и телефон в базу данных
+                    String model = st.nextToken().trim(); // Извлекаем из строки название организации без пробелов на концах
+                    String inch = st.nextToken().trim(); // Извлекаем из строки номер организации без пробелов на концах
+                    String color = st.nextToken().trim(); // Извлекаем из строки номер организации без пробелов на концах
+                    String razr = st.nextToken().trim(); // Извлекаем из строки номер организации без пробелов на концах
+                    String wifi = st.nextToken().trim(); // Извлекаем из строки номер организации без пробелов на концах
+                    String smart = st.nextToken().trim(); // Извлекаем из строки номер организации без пробелов на концах
+                    addData(db, model, inch, color, razr, wifi, smart); // Добавляем название и телефон в базу данных
                 }
             }
 
@@ -103,11 +120,15 @@ public class MySQLite extends SQLiteOpenHelper {
         String selectQuery; // Переменная для SQL-запроса
 
         if (filter.equals("")) {
-            selectQuery = "SELECT  * FROM " + TABLE_NAME + " ORDER BY " + NAME;
+            selectQuery = "SELECT  * FROM " + TABLE_NAME;
         } else {
-            selectQuery = "SELECT  * FROM " + TABLE_NAME + " WHERE (" + NAME_LC + " LIKE '%" +
+            selectQuery = "SELECT  * FROM " + TABLE_NAME + " WHERE (" + MODEL + " LIKE '%" +
                     filter.toLowerCase() + "%'" +
-                    " OR " + PHONE_NUMBER + " LIKE '%" + filter + "%'" + ") ORDER BY " + NAME;
+                    " OR " + MODEL + " LIKE '%" + filter + "%'" +
+                    " OR " + COLOR + " LIKE '%" + filter + "%'" +
+                    " OR " + INCH + " LIKE '%" + filter + "%'" +
+                    " OR " + RAZR + " LIKE '%" + filter + "%'" +")" +
+                    " ORDER BY " + ID;
         }
         SQLiteDatabase db = this.getReadableDatabase(); // Доступ к БД
         Cursor cursor = db.rawQuery(selectQuery, null); // Выполнение SQL-запроса
@@ -115,13 +136,30 @@ public class MySQLite extends SQLiteOpenHelper {
         StringBuilder data = new StringBuilder(); // Переменная для формирования данных из запроса
 
         int num = 0;
+        data.append("Модель | Диагональ | Цвет | Разрешение | WIFI | SmartTV | " + "\n");
         if (cursor.moveToFirst()) { // Если есть хоть одна запись, то
             do { // Цикл по всем записям результата запроса
-                int n = cursor.getColumnIndex(NAME);
-                int t = cursor.getColumnIndex(PHONE_NUMBER);
-                String name = cursor.getString(n); // Чтение названия организации
-                String phoneNumber = cursor.getString(t); // Чтение телефонного номера
-                data.append(String.valueOf(++num) + ") " + name + ": " + phoneNumber + "\n");
+                int a = cursor.getColumnIndex(MODEL);
+                int b = cursor.getColumnIndex(INCH);
+                int c = cursor.getColumnIndex(COLOR);
+                int d = cursor.getColumnIndex(RAZR);
+                int e = cursor.getColumnIndex(WIFI);
+                int f = cursor.getColumnIndex(SMART);
+                String model = cursor.getString(a); // Чтение названия организации
+                String inch = cursor.getString(b); // Чтение телефонного номера
+                String color = cursor.getString(c); // Чтение телефонного номера
+                String razr = cursor.getString(d); // Чтение телефонного номера
+                String wifi = cursor.getString(e); // Чтение телефонного номера
+                String smart = cursor.getString(f); // Чтение телефонного номера
+                data.append(
+                        String.valueOf(++num) + ") "
+                                + model
+                                + "| " + inch
+                                + "| " + color
+                                + "| " + razr
+                                + "| " + wifi
+                                + "| " + smart
+                                + "\n");
             } while (cursor.moveToNext()); // Цикл пока есть следующая запись
         }
         return data.toString(); // Возвращение результата

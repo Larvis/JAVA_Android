@@ -1,14 +1,7 @@
-# TSN_DEMO_08_JSOUP_MICRO
-Технология JSOUP для работы с html
+# TSN_DEMO_07_JSON
+Технология JSON для работы с http
 
-_Пример работы с JSOUP (курсы валют):_
+7) Найти информацию о тех, кому поставил звезды proffix4: https://api.github.com/users/proffix4/starred
 
-![Screenshot](screenshot.png)
+![Screenshot](scr1.jpg)
 
-![Screenshot](jsoup1.jpg)
-
-![Screenshot](jsoup2.jpg)
-
-![Screenshot](jsoup3.jpg)
-
-https://youtu.be/Zp6ohixq1wY

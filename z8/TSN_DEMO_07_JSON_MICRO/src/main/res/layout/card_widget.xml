@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="170dp"
+        android:background="@drawable/layout_border"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="11dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="79dp"
+            android:layout_height="78dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="full_name/full_name" />
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="language" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/forks"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:text="forks" />
+
+                <TextView
+                    android:id="@+id/watchers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="watchers" />
+
+                <TextView
+                    android:id="@+id/stargazers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="stargazers_count" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/linkto"
+                android:layout_width="251dp"
+                android:layout_height="37dp"
+                android:text="Перейти" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="top" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/TSN_DEMO_06_Database.TSN_DEMO_06_Database.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/z6.iml" filepath="$PROJECT_DIR$/.idea/modules/z6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_06_Database/z6.TSN_DEMO_06_Database.unitTest.iml" />
     </modules>
   </component>
 </project>
