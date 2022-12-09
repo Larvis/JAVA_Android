@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ERM_DEMO_07_JSON_MICRO</string>
+    <string name="app_name">ERM_DEMO_08_JSOUP</string>
     <string name="loading">загрузка данных…</string>
     <string name="update">ОБНОВИТЬ</string>
     <string name="not_data">нет данных…</string>

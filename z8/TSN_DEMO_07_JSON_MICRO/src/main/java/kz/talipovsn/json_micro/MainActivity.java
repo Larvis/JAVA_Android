@@ -1,12 +1,9 @@
 package kz.talipovsn.json_micro;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,16 +11,18 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.security.ProviderInstaller;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -32,17 +31,13 @@ import java.security.NoSuchAlgorithmException;
 
 import javax.net.ssl.SSLContext;
 
-
-import android.widget.ImageView;
-
-import java.util.Iterator;
-
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView; // Компонент для отображения данных
     private View card;
     private LayoutInflater inflater;
-    String url = "https://api.github.com/users/proffix4/starred"; // Адрес получения JSON - данных
+
+    private static final String BASE_URL = "https://github.com/proffix4?tab=stars"; // Адрес
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,105 +68,89 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout LL = (LinearLayout) findViewById(R.id.master);
         inflater = getLayoutInflater();
 
-
-
-        getAllData(LL, inflater);
+        generateCards(LL, inflater);
 //        onClick(null); // Нажмем на кнопку "Обновить"
     }
-//
+
+
+
     // Получить данные "Обновить"
-    public void getAllData(LinearLayout LL, LayoutInflater inflater) {
-//        textView.setText(R.string.not_data);
-
-        String json = getHTMLData(url);
-        if (json != null) {
-            JSONArray allData = null;
-
+    public void generateCards(LinearLayout LL, LayoutInflater inflater) {
+        StringBuilder data = new StringBuilder();
             try {
-                allData = new JSONArray(json);
 
-                for(int i = 0; i < allData.length(); i++) {
-                    JSONObject obj = allData.getJSONObject(i);
+                Document doc = Jsoup.connect(BASE_URL).timeout(5000).get(); // Создание документа JSOUP из html
+                Element e = doc.select("#user-starred-repos>div>div").get(0);
+//                Log.i("INFO_1", String.valueOf(e));
+                int i = 1;
+                for (Element el : e.select(".col-12.width-full")) {
+                    ++i;
+                    Log.i("INFO_1", el.select("h3 a").get(0).text());
+//                    Log.i("INFO_1", el.select("div:nth-child(2) > div.f6.color-fg-muted.mt-2 > a:nth-child(3)").get(0).text());
+
+//                for(int i = 0; i < allData.length(); i++) {
                     //store your variable
-                        String j_name = obj.getString("name");
-                        String j_full_name = obj.getString("full_name");
-                        String j_language = obj.getString("language");
-                        String j_forks = obj.getString("forks");
-                        String j_watchers = obj.getString("watchers");
 
-                    String j_stargazers_count = obj.getString("stargazers_count");
-                    String j_avatar_url = obj.getJSONObject("owner").getString("avatar_url");
-                    String j_url = obj.getJSONObject("owner").getString("html_url");
+                    String j_url = el.select("h3 a").get(0).attr("href");
+                    String j_name = el.select("h3 a").get(0).text();
 
-//                return;
-                ///////-----------------------
-//
-//                "name":"FarManager",
-//                        "full_name":"FarGroup/FarManager",
-//                        "language":"C++",
-//                        "forks":172,
-//                        "watchers":1388,
-//                        "stargazers_count":1388,
-//
-//                        "owner":{
-//                    "avatar_url":"https://avatars.githubusercontent.com/u/3636093?v=4",
-//                            "url":"https://api.github.com/users/FarGroup",
+                    Log.i("INFO_1", "====111 ===");
+                    String j_full_name = el.select("[itemprop=\"description\"]").get(0).text();
+                    String j_language = el.select("[itemprop=\"programmingLanguage\"]").get(0).text();
+
+                    String j_stargazers_count = el.select("div:nth-child(" + i + ")>div.f6.color-fg-muted.mt-2>a:nth-child(2)").text();
+                    String j_forks = el.select("div:nth-child(" + i + ") > div.f6.color-fg-muted.mt-2 > a:nth-child(3)").text();
+                    String j_watchers = el.select("div:nth-child(" + i + ") > div.f6.color-fg-muted.mt-2 > relative-time").text();
+                    Log.i("INFO_1", "====22222 ===");
+
+                    card = inflater.inflate(R.layout.card_widget, null);
 
 
-                        card = inflater.inflate(R.layout.card_widget, null);
+
+                    TextView name = (TextView) card.findViewById(R.id.name);// Имя
+                    TextView full_name = (TextView) card.findViewById(R.id.full_name); // Полное имя
+                    TextView language = (TextView) card.findViewById(R.id.language); // Язык
+                    TextView forks = (TextView) card.findViewById(R.id.forks);   // Форки
+                    TextView watchers = (TextView) card.findViewById(R.id.watchers);  // Звезды
+                    TextView stargazers_count = (TextView) card.findViewById(R.id.stargazers_count); // Следящие
+                    Button button_linkto = (Button) card.findViewById(R.id.linkto);        // Ссылка
+                    button_linkto.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            // TODO Auto-generated method stub
+                            String url = j_url;
+
+                            Intent i = new Intent(Intent.ACTION_VIEW);
+                            i.setData(Uri.parse(url));
+                            startActivity(i);
+                        }
+                    });
+
+                    name.setText(j_name);
+                    full_name.setText(j_full_name);
+                    language.setText(j_language);
+                    forks.setText(j_forks);
+                    watchers.setText(j_watchers);
+                    stargazers_count.setText(j_stargazers_count);
+
+                    Log.i("INFO_1", j_forks);
+                    Log.i("INFO_1", j_watchers);
+                    Log.i("INFO_1", j_stargazers_count);
+                    Log.i("INFO_1", "=======");
 
 
-                        ImageView avatar = (ImageView) card.findViewById(R.id.avatar);       // Аватар
-                        TextView name = (TextView) card.findViewById(R.id.name);// Имя
-                        TextView full_name = (TextView) card.findViewById(R.id.full_name); // Полное имя
-                        TextView language = (TextView) card.findViewById(R.id.language); // Язык
-                        TextView forks = (TextView) card.findViewById(R.id.forks);   // Форки
-                        TextView watchers = (TextView) card.findViewById(R.id.watchers);  // Звезды
-                        TextView stargazers_count = (TextView) card.findViewById(R.id.stargazers_count); // Следящие
-                        Button button_linkto = (Button) card.findViewById(R.id.linkto);        // Ссылка
-                        button_linkto.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                // TODO Auto-generated method stub
-                                String url = j_url;
+                    // Цикл по всем карточкам
+                    LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                    layoutParams.setMargins(30, 20,30, 5);
+                    card.setLayoutParams(layoutParams);
 
-                                Intent i = new Intent(Intent.ACTION_VIEW);
-                                i.setData(Uri.parse(url));
-                                startActivity(i);
-                            }
-                        });
-
-                        avatar.setImageDrawable(LoadImageFromWebOperations(j_avatar_url));
-                        name.setText(j_name);
-                        full_name.setText(j_full_name);
-                        language.setText(j_language);
-                        forks.setText(j_forks);
-                        watchers.setText(j_watchers);
-                        stargazers_count.setText(j_stargazers_count);
-
-                        // Цикл по всем карточкам
-                        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                        layoutParams.setMargins(30, 20,30, 5);
-                        card.setLayoutParams(layoutParams);
-
-                        LL.addView(card);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                    LL.addView(card);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-
-        }
     }
 
-    public static Drawable LoadImageFromWebOperations(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "src name");
-            return d;
-        } catch (Exception e) {
-            return null;
-        }
-    }
 
     // Метод чтения данных с сети по протоколу HTTP
     public static String getHTMLData(String url) {

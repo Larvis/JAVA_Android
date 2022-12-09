@@ -6,78 +6,100 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="352dp"
-        android:layout_height="170dp"
+        android:layout_width="356dp"
+        android:layout_height="280dp"
         android:background="@drawable/layout_border"
         android:orientation="horizontal"
         android:paddingTop="3dp"
         android:paddingBottom="3dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="11dp">
 
-        <ImageView
-            android:id="@+id/avatar"
-            android:layout_width="79dp"
-            android:layout_height="78dp"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/name"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="name" />
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="1dp"
+                android:text="name"
+                app:layout_constraintBottom_toTopOf="@+id/full_name"
+                app:layout_constraintEnd_toEndOf="@+id/full_name"
+                app:layout_constraintStart_toStartOf="@+id/full_name"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/full_name"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="full_name/full_name" />
+                android:text="full_name/full_name"
+                app:layout_constraintBottom_toTopOf="@+id/language"
+                app:layout_constraintEnd_toEndOf="@+id/language"
+                app:layout_constraintStart_toStartOf="@+id/language"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
 
             <TextView
                 android:id="@+id/language"
-                android:layout_width="match_parent"
+                android:layout_width="352dp"
                 android:layout_height="wrap_content"
-                android:text="language" />
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="1dp"
+                android:text="language"
+                app:layout_constraintBottom_toTopOf="@+id/stargazers_count"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/full_name" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/stargazers_count"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:text="stargazers_count"
+                app:layout_constraintBottom_toTopOf="@+id/forks"
+                app:layout_constraintStart_toStartOf="@+id/language"
+                app:layout_constraintTop_toBottomOf="@+id/language" />
 
-                <TextView
-                    android:id="@+id/forks"
-                    android:layout_width="77dp"
-                    android:layout_height="wrap_content"
-                    android:text="forks" />
+            <TextView
+                android:id="@+id/forks"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginBottom="1dp"
+                android:text="forks"
+                app:layout_constraintBottom_toTopOf="@+id/watchers"
+                app:layout_constraintEnd_toEndOf="@+id/stargazers_count"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stargazers_count" />
 
-                <TextView
-                    android:id="@+id/watchers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="watchers" />
-
-                <TextView
-                    android:id="@+id/stargazers_count"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="stargazers_count" />
-
-            </LinearLayout>
+            <TextView
+                android:id="@+id/watchers"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:text="watchers"
+                app:layout_constraintBottom_toTopOf="@+id/linkto"
+                app:layout_constraintStart_toStartOf="@+id/linkto"
+                app:layout_constraintTop_toBottomOf="@+id/forks" />
 
             <Button
                 android:id="@+id/linkto"
-                android:layout_width="251dp"
-                android:layout_height="37dp"
-                android:text="Перейти" />
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:text="Перейти"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/watchers" />
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.Barrier
             android:layout_width="match_parent"
